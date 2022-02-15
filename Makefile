@@ -1,6 +1,6 @@
 build:
-	docker build -t itinance/php-7.4-dev:latest -t itinance/php-7.4-dev:v1.0.0 .
+	docker build -t itinance/php-8.1-dev:latest -t itinance/php-8.1-dev:v1.0.0 .
 
-push:
-	docker push itinance/php-7.4-dev:latest
-	docker push itinance/itinance/php-7.4-dev:v1.0.0
+push: build
+	docker push itinance/php-8.1-dev:latest
+	docker push itinance/php-8.1-dev:v1.0.0
